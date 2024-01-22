@@ -1,49 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
-     <!-- tailwind css link -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
-     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- for font awosome -->
-     <script src="https://kit.fontawesome.com/a24099b832.js" crossorigin="anonymous"></script>
-     <!-- font style -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
- 
- <!-- tailwind custom colore -->
-     <script>
- tailwind.config = {
-   theme: {
-     extend: {
-       colors: {
-         clifford: '#da373d',
-       }
-     }
-   }
- }
- </script>
-     <style>
-        .font-manrope{
-         font-family: 'Manrope', sans-serif;
-        } 
-     </style>
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- for font awosome -->
+    <script src="https://kit.fontawesome.com/a24099b832.js" crossorigin="anonymous"></script>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind custom colore -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* img{
+            background:url('./Images/1.png');
+        } */
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
+
 <body class="font-manrope">
     <header>
+        <!-- navber part -->
+        <section class="cntainer max-w-[1100px] mx-auto">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class><a><span class="text-[#FF4240]">Home</span> </a></li>
+
+                            <li><a> About</a></li>
+                            <li><a> Pages</a></li>
+                            <li><a> Blog</a></li>
+                            <li><a> Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold text-[black]">Hockey <span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+
+                        <li><a> About</a></li>
+                        <li><a> Pages</a></li>
+                        <li><a> Blog</a></li>
+                        <li><a> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-xl font-bold text-white bg-[#FF4240]">Get Ticket</a>
+                </div>
+            </div>
+            <!-- casusel part -->
+            <div class=" my-16 mx-10 lg:mx-0">
+                <div class="carousel  lg:h-[100vh]">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-full" />
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full  mb-5 lg:mb-0">
+                        <img src="./Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full ">
+                        <img src="./Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div
+                        class="absolute bg-black lg:w-2/5  lg:mx-0  p-8 rounded-xl space-y-3 lg:right-32 lg:-translate-y-52 w-[80%]">
+                        <h4 class="text-xl lg:text-2xl font-extrabold text-white ">Meet all the heroes from the field
+                        </h4>
+                        <p class="text-gray-400">Hockey is a game played on ice between two teams of 11 players who use
+                            long curved sticks to hit a small rubber disk</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Hockey is a game played on ice between two teams of 11 players who use long curved sticks to hit a small rubber disk, called a puck, and try to score goals. -->
+
 
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
-    
+
 </body>
+
 </html>
